@@ -1,0 +1,115 @@
+.main-section
+  background-image: url('../images/main-section-bg.jpg')
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  background-color #000
+
+  &__container
+    position relative
+    z-index 1
+    padding 10px 0 0
+    +above($breakpoints.sm)
+      padding 25px 0 70px
+    +above($breakpoints.md)
+      padding 30px 0 90px
+    +above($breakpoints.xxl)
+      padding 34px 0 151px
+
+  &__title,
+  &__sub-title,
+  &__bottom
+    text-align: center
+    +above($breakpoints.sm)
+      text-align: start
+
+  &__title
+    padding 20px 0 10px
+    +above($breakpoints.sm)
+      padding 30px 0 11px
+    +above($breakpoints.md)
+      padding 50px 0 12px
+    +above($breakpoints.xxl)
+      padding 70px 0 13px
+
+  &__bottom-wrapper
+    width 100%
+    backdrop-filter: blur(7px);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.35) 32.29%, rgba(255, 255, 255, 0.35) 100%);
+    margin-top 15px
+    +above($breakpoints.sm)
+      width max-content
+      margin-top 25px
+    +above($breakpoints.md)
+      margin-top 35px
+    +above($breakpoints.xxl)
+      margin-top 44px
+
+  &__bottom
+    width 100%
+    background-image: radial-gradient(circle at 100% 100%, transparent -1px, #5a5f60 -1px, #5a5f60 1px, transparent 1px), linear-gradient(to right, #5a5f60, #5a7d84), radial-gradient(circle at 0% 100%, transparent -1px, #5a7d84 -1px, #5a7d84 1px, transparent 1px), linear-gradient(to bottom, #5a7d84, #535353), radial-gradient(circle at 0% 0%, transparent -1px, #535353 -1px, #535353 1px, transparent 1px), linear-gradient(to left, #535353, #535353), radial-gradient(circle at 100% 0%, transparent -1px, #535353 -1px, #535353 1px, transparent 1px), linear-gradient(to top, #535353, #5a5f60);
+    background-size: 1px 1px, calc(100% - 2px) 2px, 1px 1px, 2px calc(100% - 2px);
+    background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+    background-repeat: no-repeat;
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 13px
+    padding 15px 10px
+    +above($breakpoints.sm)
+      gap: 20px
+      align-items: flex-start
+      padding 20px 20px 25px
+    +above($breakpoints.md)
+      gap: 25px
+      padding 25px 30px 30px
+    +above($breakpoints.xxl)
+      gap: 30px
+      padding 32px 44px 42px 35px
+
+  &__form
+    width 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 5px
+    +above($breakpoints.sm)
+      flex-direction: row
+      gap: 6px
+    +above($breakpoints.md)
+      gap: 8px
+    +above($breakpoints.xxl)
+      gap: 9px
+    & > *
+      width 280px !important
+      +above($breakpoints.sm)
+        width 155px !important
+      +above($breakpoints.md)
+        width 190px !important
+      +above($breakpoints.xxl)
+        width 223px !important
+    button
+      +above($breakpoints.sm)
+        width 145px !important
+      +above($breakpoints.md)
+        width 180px !important
+      +above($breakpoints.xxl)
+        width 207px !important
+
+  &__img
+    width: 242px;
+    height: auto;
+    margin: 10px 0 0 19px;
+    +above($breakpoints.sm)
+      margin 0
+      position: absolute
+      z-index -1
+      width: 440px;
+      bottom: 0;
+      right: -205px;
+    +above($breakpoints.md)
+      width: 550px;
+      right: -210px;
+    +above($breakpoints.xxl)
+      width 721px
+      right: -276px

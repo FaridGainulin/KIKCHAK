@@ -1,0 +1,50 @@
+section.reasons-section
+  .wrapper
+    .reasons-section__container
+      h2.reasons-section__title.font-w-bold.font-s-40.text-up
+        | Почему «KIKCHAK»?
+      .swiper-bullet
+        .reasons-section__cards.swiper-wrapper
+          .reasons-section__card.swiper-slide
+            .font-w-medium.font-s-24-a
+              span.font-w-bold Продуманная концепция. 
+              | Мы позиционируем себя как кафе быстрого питания, где основное блюдо — шаурма, при 
+              br.no-br
+              | этом, создаем атмосферу, куда хочется возвращаться и уделяем большое внимание сервису, относимся к гостям, как 
+              br.no-br
+              | к членам семьи
+          .reasons-section__card.swiper-slide
+            .font-w-medium.font-s-24-a
+              span.font-w-bold Сильный маркетинг. 
+              | Мы работаем с широкой целевой аудиторией, в которую входят, как студенты, так и офисные 
+              br.no-br
+              | работники, поэтому точно знаем как правильно привлечь клиентов и передадим вам по-настоящему рабочие 
+              br.no-br
+              | маркетинговые инструменты
+          .reasons-section__card.swiper-slide
+            .font-w-medium.font-s-24-a
+              span.font-w-bold Опытные партнеры. 
+              | История нашей компании начинается в 2012 году и продолжается до сих пор, мы открыли уже 15 
+              br.no-br
+              | филиалов и получили большой опыт в запуске франчайзинговых проектов, поэтому легко поможем вам открыть кафе
+          .reasons-section__card.swiper-slide
+            .font-w-medium.font-s-24-a
+              span.font-w-bold Бизнес-модель. 
+              | Мы детально продумали все процессы ведения бизнеса и его стратегию развития, поэтому каждый 
+              br.no-br
+              | наш партнер, даже без предпринимательского опыта, сможет легко запустить работу кафе всего за 3 месяца
+        .bullet-pagination
+      .reasons-section__bottom
+        .reasons-section__block.font-w-medium
+          img.reasons-section__logo(src="images/logo.png" loading="lazy" width="402" height="426" alt="logo")
+          .reasons-section__bottom-text.font-s-18 Напишите нам!
+          .reasons-section__bottom-title.font-s-32.text-up
+            | Будем рады обсудить все 
+            br.no-br
+            | детали лично!
+        form.reasons-section__form(data-feedback-form)
+          textarea.input.input--textarea(type="text" name="answer" autocomplete="off" placeholder="Текст вопроса")
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input(type="text" name="name" autocomplete="off" placeholder="Имя")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+          button.btn(type="submit") Задать вопрос

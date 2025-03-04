@@ -1,0 +1,123 @@
+.reasons-section
+  background-color #97D0D7
+
+  &__container
+    position relative
+    z-index 1
+    color: $color-black
+    padding 20px 0
+    +above($breakpoints.sm)
+      padding 40px 0
+    +above($breakpoints.md)
+      padding 70px 0
+    +above($breakpoints.xxl)
+      padding 111px 0 116px
+
+  &__title
+    text-align: center
+    padding-bottom 15px
+    +above($breakpoints.sm)
+      padding-bottom 20px
+    +above($breakpoints.md)
+      padding-bottom 30px
+    +above($breakpoints.xxl)
+      padding-bottom 42px
+
+  &__cards
+    +above($breakpoints.sm)
+      display: flex
+      flex-direction: column
+      gap: 15px
+    +above($breakpoints.md)
+      gap: 20px
+    +above($breakpoints.xxl)
+      gap: 23px
+
+  &__card
+    width 280px !important
+    letter-spacing: -0.1px
+    +above($breakpoints.sm)
+      width max-content !important
+
+  &__bottom
+    width 100%
+    background-color #0E0E0E
+    box-shadow: 0 4px 25px 1px rgba(0, 0, 0, 0.15);
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 10px
+    +above($breakpoints.sm)
+      flex-direction: row
+      gap: 30px
+      margin-top 30px
+    +above($breakpoints.md)
+      gap: 40px
+      margin-top 50px
+    +above($breakpoints.xxl)
+      gap: 47px
+      margin-top 60px
+
+  &__block
+    width 100%
+    color: #241F1B
+    background-color #fff
+    display: flex
+    flex-direction: column
+    padding 10px
+    text-align: center
+    +above($breakpoints.sm)
+      text-align: start
+      width 340px
+      padding 20px 5px 25px 25px
+    +above($breakpoints.md)
+      width 440px
+      padding 25px 5px 30px 35px
+    +above($breakpoints.xxl)
+      width 559px
+      padding 27px 5px 34px 40px
+
+  &__logo
+    width 50px
+    height: auto
+    margin-bottom -53px
+    +above($breakpoints.sm)
+      margin 0
+      width 110px
+    +above($breakpoints.md)
+      width 120px
+    +above($breakpoints.xxl)
+      width 134px
+
+  &__bottom-text
+    color: #000
+    padding 0 0 10px
+    +above($breakpoints.sm)
+      padding 60px 0 15px
+    +above($breakpoints.md)
+      padding 100px 0 20px
+    +above($breakpoints.xxl)
+      padding 121px 0 24px
+
+  &__bottom-title
+    padding 0 67px
+    +above($breakpoints.sm)
+      padding 0
+
+  &__form
+    width 280px
+    display: flex
+    flex-direction: column
+    gap: 5px
+    margin-bottom 15px
+    +above($breakpoints.sm)
+      margin 0
+      width 320px
+      gap: 7px
+    +above($breakpoints.md)
+      width 430px
+      gap: 8px
+    +above($breakpoints.xxl)
+      width 514px
+      gap: 9px
+      margin-top 5px

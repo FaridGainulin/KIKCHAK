@@ -1,0 +1,64 @@
+section.finances-section
+  .wrapper
+    .finances-section__container
+      h2.finances-section__title.font-w-bold.font-s-40.text-up
+        | «KIKCHAK» — это:
+      .finances-section__block
+        .swiper-bullet
+          .finances-section__rows.swiper-wrapper
+            .finances-section__row.swiper-slide
+              .finances-section__row-dot
+              .font-w-medium.font-s-24 15 точек в 2-х городах России, 11 из них — открыты по франшизе
+            .finances-section__row.swiper-slide
+              .finances-section__row-dot
+              .font-w-medium.font-s-24 Известный бренд и команда с богатым опытом ведения бизнеса
+            .finances-section__row.swiper-slide
+              .finances-section__row-dot
+              .font-w-medium.font-s-24 Продуманная концепция, уникальное меню и сильное комьюнити
+            .finances-section__row.swiper-slide
+              .finances-section__row-dot
+              .font-w-medium.font-s-24 Профессиональный подход в развитии франчайзинговых проектов
+          .bullet-pagination
+      h2.finances-section__sub-title.font-w-bold.font-s-40.text-up
+        | Франшиза в цифрах
+      .swiper-bullet
+        .finances-section__cards.swiper-wrapper
+          .finances-section__card.swiper-slide
+            img.finances-section__card-icon(src="images/finances-section-card-icon.svg" loading="lazy" width="46" height="46" alt="icon")
+            .font-w-bold.font-s-32-a от 180 продаж
+            .font-s-16 будет совершаться <br> ежедневно
+          .finances-section__card.swiper-slide
+            img.finances-section__card-icon(src="images/finances-section-card-icon.svg" loading="lazy" width="46" height="46" alt="icon")
+            .font-w-bold.font-s-32-a от 550 рублей
+            .font-s-16 средний чек <br> одного клиента
+          .finances-section__card.swiper-slide
+            img.finances-section__card-icon(src="images/finances-section-card-icon.svg" loading="lazy" width="46" height="46" alt="icon")
+            .font-w-bold.font-s-32-a 3 месяца
+            .font-s-16 для запуска <br> всех процессов
+          .finances-section__card.swiper-slide
+            img.finances-section__card-icon(src="images/finances-section-card-icon.svg" loading="lazy" width="46" height="46" alt="icon")
+            .font-w-bold.font-s-32-a 2 269 000 рублей
+            .font-s-16 средняя ежемесячная <br> выручка
+          .finances-section__card.swiper-slide
+            img.finances-section__card-icon(src="images/finances-section-card-icon.svg" loading="lazy" width="46" height="46" alt="icon")
+            .font-w-bold.font-s-32-a 13,2%
+            .font-s-16 рентабельность <br> по чистой прибыли
+          .finances-section__card.swiper-slide
+            img.finances-section__card-icon(src="images/finances-section-card-icon.svg" loading="lazy" width="46" height="46" alt="icon")
+            .font-w-bold.font-s-32-a 300 000 рублей
+            .font-s-16 средняя ежемесячная <br> чистая прибыль
+        .bullet-pagination
+      .finances-section__bottom
+        img.finances-section__bottom-img(src="images/finances-section-bottom-img.png" loading="lazy" width="297" height="241" alt="image")
+        .finances-section__bottom-title.font-w-bold.font-s-32
+          | Скачайте финансовую модель франшизы
+        .finances-section__bottom-text.font-s-20
+          | Узнайте, какие инвестиции потребуются 
+          br
+          | для старта бизнеса
+        form.finances-section__form(data-feedback-form)
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input(type="text" name="name" autocomplete="off" placeholder="Имя")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+          button.btn(type="submit") Узнать
+  img.finances-section__img-bg(src="images/logo-line-img.jpg" loading="lazy" width="1920" height="66" alt="image")
