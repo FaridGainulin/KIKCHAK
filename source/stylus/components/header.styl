@@ -3,6 +3,13 @@
     display: flex
     justify-content space-between
     align-items: center
+    padding-top 10px
+    +above($breakpoints.sm)
+      padding-top 25px
+    +above($breakpoints.md)
+      padding-top 30px
+    +above($breakpoints.xxl)
+      padding-top 34px
 
   &__brand-block
     +above($breakpoints.sm)
@@ -33,6 +40,6 @@
     text-align: center
     color: $color-black
     background-color $color-yellow
-    padding 3px 0
+    padding 7px 0
     +above($breakpoints.sm)
       display: none
